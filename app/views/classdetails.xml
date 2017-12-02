@@ -1,0 +1,13 @@
+<Alloy>
+<Window id='win'>
+    <TableView  > 
+		<TableViewRow layout="vertical" >    
+         <ImageView id="Image"  top=20 />
+         <Button onClick=" BuytableClick" >Buy this Package</Button>
+         <Label id="City" bottom=20 /> 
+         <Label id="details" bottom=20 />
+         <Button onClick=" MaptableClick" title="Address for Visa Application"  />
+       </TableViewRow>
+    </TableView>
+</Window> 
+</Alloy>

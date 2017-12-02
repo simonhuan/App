@@ -1,0 +1,10 @@
+<Alloy>
+<Collection src="webjson" />
+    <Window id='win'>
+		  <TableView dataCollection="webjson" dataFilter="filterFunction" onClick="RegiontableClick">
+					<TableViewRow layout="vertical" title="{City}.Till {DealValidTill}" City="{City}" Image="{Image}" details="{details}">
+		
+					</TableViewRow>
+			</TableView>
+    </Window> 
+</Alloy>

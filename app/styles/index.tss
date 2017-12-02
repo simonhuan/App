@@ -1,0 +1,86 @@
+"Window": {
+	backgroundColor: "#fff"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+} 
+
+".details" : {
+font: {
+		fontSize: 15,
+		fontFamily: 'Helvetica Neue'
+	},
+textAlign: 'left'
+
+}
+"#mapView": { 
+    region: {
+        latitude: 22.279165, 
+        longitude: 114.161521, 
+        latitudeDelta: 0.01, 
+        longitudeDelta: 0.01
+    }
+}
+
+
+
+"#Boston": {
+    latitude: 42.360915,
+    longitude: -71.060356, 
+    title: "Boston",
+    subtitle: "Boston" 
+}
+
+"#Cebu": {
+    latitude: 22.27856,
+    longitude: 114.165228, 
+    title: "Cebu",
+    subtitle: "Cebu" 
+}
+
+"#LosAngeles": {
+    latitude: 22.278139,
+    longitude: 114.158649, 
+    title: "LosAngeles",
+    subtitle: "LosAngeles" 
+}
+
+"#Osaka": {
+    latitude: 22.278139,
+    longitude: 114.158234, 
+    title: "Osaka",
+    subtitle: "Osaka" 
+}
+
+"#Seoul": {
+    latitude: 22.279954,
+    longitude: 114.164069, 
+    title: "Seoul",
+    subtitle: "Seoul" 
+}
+
+"#Singapore": {
+    latitude: 22.279439,
+    longitude: 114.164829, 
+    title: "Singapore",
+    subtitle: "Singapore" 
+}
+
+
+"TextField": {
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, 
+    color: "#336699", 
+    top: "10", 
+    width: "250", 
+    height: "60", 
+    autocapitalization: "NONE"
+}
+

@@ -1,0 +1,64 @@
+<Alloy>
+<Collection src="webjson" />
+<Collection src="consulate" />
+	<TabGroup>
+		<Tab title="Home" icon="KS_nav_ui.png">
+			<Window title="Home">
+				<TableView dataCollection="webjson" onClick="IndextableClick">
+					<TableViewRow layout="vertical" Image="{Image}" City="{City}" details="{details}" pid="{id}">
+						<ImageView image="{Image}" top=20 />
+						<Label text="{City}" bottom=20 /> 
+						<Label class="details" text="{details}" bottom=20 />
+					</TableViewRow>
+				</TableView>
+			</Window>
+		</Tab>
+
+		<Tab title="Class" icon="KS_nav_views.png">
+			<Window title="Class">
+			<TableView  onClick="ClasstableClick"> 
+				<TableViewSection headerTitle="Business Class">
+					<TableViewRow title="Under $7000" classid="Business"  priceid="under7000"  hasChild=true/> 
+					<TableViewRow title="Above $7000" classid="Business"  priceid="above7000"  hasChild=true/> 
+				</TableViewSection>
+				<TableViewSection headerTitle="Economy Class">
+					<TableViewRow title="Under $5000"  classid="Economy" priceid="under5000"  hasChild=true/> 
+					<TableViewRow title="Above $5000"  classid="Economy" priceid="above5000"  hasChild=true/> 
+				</TableViewSection> 
+			</TableView>
+			</Window>
+		</Tab>
+
+		<Tab title="Region" icon="KS_nav_views.png">
+			<Window title="Region">
+			<TableView dataCollection="webjson" onClick="RegiontableClick" dataTransform="transform"> 
+				<TableViewSection layout="vertical" headerTitle="{Region}" >
+					<TableViewRow title="{City}" City="{City}" hasChild=true /> 
+				</TableViewSection>               
+			</TableView>
+			</Window>
+		</Tab>
+
+
+		<Tab title="Map" icon="KS_nav_views.png">
+			<Window title="Map" navBarHidden=true>
+			<Module id="mapView" dataCollection="consulate" dataTransform="transformFunction" module="ti.map" method="createView" userLocation=true onClick="mapClicked">
+            </Module>
+			</Window>
+		</Tab>
+
+
+		<Tab title="Login" icon="KS_nav_views.png">
+			<Window title="Login">
+			<TableView > 
+				<TableViewSection layout="vertical"  >
+					<TableViewRow onClick="gotologinFunction" title="Logoff/Login" hasChild=true /> 
+					<TableViewRow onClick="BookedPackagestableClick" title="Booked Packages" hasChild=true /> 
+					<TableViewRow title="About Us" hasChild=true /> 
+				</TableViewSection>               
+			</TableView>
+			</Window>
+		</Tab>
+	
+	</TabGroup>
+</Alloy>

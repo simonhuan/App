@@ -1,0 +1,7 @@
+<Alloy>
+			<Window layout="vertical" title="Login">
+			<TextField id="textField" hintText="userid"/>
+            <TextField id="textField2" hintText="password"/>
+            <Button title="Login" onClick="loginFunction" top=50 /> 
+			</Window>
+</Alloy>

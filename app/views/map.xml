@@ -1,0 +1,7 @@
+<Alloy>
+    <Collection src="consulate" />
+    <Window id='win'>
+       <Module  dataCollection="consulate" id="mapView"  dataTransform="transformFunction"  datafilter="filterFunction"  module="ti.map" method="createView" userLocation=true>
+     	</Module>
+    </Window> 
+</Alloy>

@@ -1,0 +1,6 @@
+
+{
+    "dependencies": {
+      "alloy-sync-sqlrest": "^0.3.4" 
+    }
+  }
