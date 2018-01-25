@@ -1,4 +1,4 @@
-Student Name:LUO FAN HUAN       ID:17405351
+Student Name:LUO FAN HUAN     
 
 1.This is the App Homepage and contain the Home, Class, Region, Map and Login
 The App database model is connect the Heroku dynamical:https://funfares-web.herokuapp.com. the user can buy something from the website and then they can see on the App.
